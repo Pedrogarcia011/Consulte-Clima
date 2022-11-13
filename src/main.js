@@ -9,7 +9,7 @@ const humidade = document.querySelector('#humidade');
 
 const trabalhandoClima = (dados) => {
     console.log(dados);
-    temperatura.innerHTML += (dados.main.temp).toFixed(1);
+    temperatura.innerHTML = (dados.main.temp).toFixed(1);
     cityResult.innerHTML = dados.name;
     clima.innerHTML = dados.weather[0].description;
     humidade.innerHTML = dados.main.humidity
