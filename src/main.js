@@ -9,10 +9,10 @@ const humidade = document.querySelector('.humidity');
 
 const trabalhandoClima = (dados) => {
     console.log(dados);
-    temperatura.innerHTML = `${dados.main.temp.toFixed(1)} &deg;C`;
-    cityResult.innerHTML = dados.name;
-    clima.innerHTML = dados.weather[0].description;
-    humidade.innerHTML = `${dados.main.humidity} %`
+    temperatura.innerHTML = `Temperatura:${dados.main.temp.toFixed(1)} &deg;C`;
+    cityResult.innerHTML = `Cidade: ${dados.name}`;
+    clima.innerHTML = `Condição: ${dados.weather[0].description}`;
+    humidade.innerHTML = `Umidade:  ${dados.main.humidity} %`
 }
 
 // const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=1f1941ef26300e3cddf7f63da8d05595&lang=pt_br`;
